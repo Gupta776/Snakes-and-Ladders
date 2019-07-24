@@ -13,17 +13,31 @@ public class SnakeLadders{
 	public static boolean snake(int i,int j) {
 		//snake is in 4th place thats the co-ordinate [1,2] i.e, i=1 & j=2
 		//write your code here
-		return false;
+		boolean snakeFlag = false;
+		if( i == 1 && j ==2) {
+			snakeFlag = true;
+		}
+		
+		return snakeFlag;
 	}
 	public static boolean ladder(int i,int j) {
 		//ladder is in 3rd place thats the co-ordinate [0,3] i.e, i=0 and j=2
 		//write your code here
-		return false;
+		boolean ladderFlag = false;
+		if(i == 0 && j == 2 ) {
+			ladderFlag = true;
+		}
+		
+		return ladderFlag;
 	}
 	public static boolean gameOver(int score) {
 		//if the score is greater than 9 you win. 
 		//write your code here
-		return false;
+		boolean gameFlag = false;
+		if (score > 9) {
+			gameFlag = true;
+		}
+		return gameFlag;
 	}
 	public static void main(String args[]) {
 		board = new int[3][3];
